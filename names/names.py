@@ -21,7 +21,7 @@ class BSTNode:
                 self.right = BSTNode(value)
             else:
                 return self.right.insert(value)
-    
+
     def contains(self, target):
         if target == self.value:
             return True
@@ -36,7 +36,6 @@ class BSTNode:
                     return False
                 else:
                     return self.right.contains(target)
-
 
 
 duplicates = []  # Return the list of duplicates in this data structure
@@ -60,8 +59,6 @@ for line in f:
 f.close()
 
 
-
-
 # Replace the nested for loops below with your improvements
 
 
@@ -83,8 +80,8 @@ f.close()
 
 
 end_time = time.time()
-print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
-print (f"runtime: {end_time - start_time} seconds")
+print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
+print(f"runtime: {end_time - start_time} seconds")
 
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
